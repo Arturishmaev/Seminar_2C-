@@ -47,6 +47,9 @@ else
 {
     System.Console.WriteLine($"Число {num} не кратно числам {a} {b}");
 }
+
+
+// Программа: возрастные группы.
 System.Console.WriteLine("Введите ваш возраст :");
 int age = Convert.ToInt32(Console.ReadLine());
 
@@ -54,23 +57,23 @@ if (age <= 13)
 {
     System.Console.WriteLine("Вы еще ребенок");
 }
-if (age > 13 && age <= 24)
+else if (age > 13 && age <= 24)
 {
     System.Console.WriteLine("Вы в молодом возрасте");
 }
-if (age > 24 && age <= 59)
+else if (age > 24 && age <= 59)
 {
     System.Console.WriteLine("Вы в зрелом возрасте");
 }
-if (age > 59 && age <= 85)
+else if (age > 59 && age <= 85)
 {
     System.Console.WriteLine("Вы в старческом возрасте");
 }
-if (age > 85 && age <= 126)
+else if (age > 85 && age <= 126)
 {
     System.Console.WriteLine("Вы долгожитель");
 }
-else if (age > 126)
+else  
 {
     Console.WriteLine("столько еще никто не прожил");
 }
